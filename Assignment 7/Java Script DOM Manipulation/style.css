@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --error: #ec1313;
+  --success: #00ff00;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.container {
+  border: 1px solid black;
+  width: 400px;
+  height: 550px;
+  background-color: #fff;
+
+}
+
+.form {
+  padding: 2rem;
+}
+
+.form-group{
+  margin-bottom: 15px;
+}
+
+.form h2 {
+  color: #FC7233;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+}
+
+.form-group input{
+  display: block;
+  width: 100%;
+  padding: 10px 4px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group input:focus{
+  outline: none;
+  border: 1px solid #333;
+  background-color: yellow;
+}
+
+.form-group small{
+
+  margin-left: 3px;
+  visibility: hidden;
+  color: var(--error);
+}
+
+span{
+  color: var(--error);
+}
+.button {
+  width: 100%;
+  padding: 13px 48px;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: #1f1c18;
+  color: #fff;
+}
+
+
+
+.form-group.error  input{
+
+  border:1.5px solid;
+  border-color: var(--error);
+}
+
+.form-group.success  input{
+  border:1.5px solid;
+  border-color: var(--success);
+}
+
