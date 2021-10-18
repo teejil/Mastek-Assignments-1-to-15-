@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo05-updating ObservableArray</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/knockout/knockout-3.1.0.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    Hobby<input data-bind= "value: hobby">
+    <button data-bind="click: addHobbyToList">Add Hobby</button>
+    <ul data-bind="foreach: hobbies">
+        <li data-bind="text: $data"></li>
+    </ul>
+
+  <!--  <pre>
+    <article>
+    <h1>How to present array data on page</h1>
+    Referring to each array entry using $data    
+    for(let index in array1){
+        console.log(array[index])
+    }
+    foreach(element in array){
+        consloe.log(element)
+    }
+    element=>ko=>$data
+</article>
+<article>
+    <h1>Click binding</h1>
+    data-bind="click: incrementClickCounter"
+    databind="eventname: eventhandler"
+</article>
+<article>
+    <h1>ObservableArray.push()</h1>
+    this.hobbies.push(this.hobby());
+</article>
+
+</pre>
+-->
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
